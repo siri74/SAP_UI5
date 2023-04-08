@@ -1,0 +1,25 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
+    <Dialog id="openDialog" title="{i18n>DialogTitle}">
+        <form:SimpleForm
+         id="SimpleFormDisplay354"
+         editable="true"
+         layout="ResponsiveGridLayout">
+            <form:content>
+                <Label text="Emp-id"/>
+                <Input id="field1" value="{employee>Emp-id}"/>
+                <Label text="FirstName"/>
+                <Input id="field2" value="{employee>FirstName}" />
+                <Label text="LastName"/>
+                <Input id="field3" value="{employee>LastName}"/>
+                <Label text="Email"/>
+                <Input id="field4" value="{employee>Email}"/>
+            </form:content>
+        </form:SimpleForm> 
+        <buttons>
+            <Button text="Update" type="Accept" press=".onCloseDialog"/>
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,75 @@
+<mvc:View
+   controllerName="task1.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+  displayBlock="true">
+  <Shell>
+   <App class="myApp">
+      <pages>
+         <Page title="{i18n>pagetitle}">
+            <content>
+                <!-- <Panel
+                         class="sapUiResponsiveMargin"
+							    width="auto">
+                    <content> -->
+                        <Table 
+                            id="empTab"
+		                      class="sapUiResponsiveMargin"
+                            alternateRowColors="true"
+                            backgroundDesign="Solid"
+		                      width="auto"
+                            items="{
+                               path : 'employee>/Employees',
+                               sorter : {
+                               path : 'FirstName' 
+                               }
+                               }"
+		                      >
+                           <headerToolbar>
+			                    <Toolbar>
+				                     <Title id="Titleid" text="{i18n>tabletitle}"/>
+			                    </Toolbar>
+		                     </headerToolbar> 
+                              <columns>
+			                        <Column>
+				                        <FormattedText htmlText="{i18n>column1}"/>
+			                        </Column>
+                                 <Column>
+				                        <FormattedText htmlText="{i18n>column2}"/>
+			                        </Column>
+                                 <Column>
+				                        <FormattedText htmlText="{i18n>column3}"/>
+			                        </Column>
+                                 <Column>
+				                        <FormattedText htmlText="{i18n>column4}"/>
+			                        </Column>
+                                 <Column class = "col5">
+				                        <FormattedText htmlText="{i18n>column5}"/>
+			                        </Column>
+		                        </columns>
+                           <items>
+                               <ColumnListItem>
+                                  <cells>
+                                  <Text text="{employee>Emp-id}"></Text>
+                                  <Text text="{employee>FirstName}"></Text>
+                                  <Text text="{employee>LastName}"></Text>
+                                  <Text text="{employee>Email}"></Text> 
+                                  <Button
+                                         id="helloDialogButton"
+                                         
+                                         text="{i18n>DialogButtonText}"
+                                         icon="sap-icon://edit"
+                                         class="sapUiSmallMarginEnd"
+                                         press=".onOpenDialog"/>
+                                  </cells>
+                               </ColumnListItem>
+                           </items>
+                        </Table>
+                    <!-- </content>
+                </Panel> -->
+            </content>
+         </Page>
+      </pages>
+   </App>
+   </Shell>
+</mvc:View>
