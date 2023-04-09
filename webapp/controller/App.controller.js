@@ -42,26 +42,6 @@ sap.ui.define([
       };
       let oModel=new sap.ui.model.json.JSONModel(data);
       this.getView().setModel(oModel,"employee"); 
-      //this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
-      //var oModel = new sap.ui.model.json.JSONModel();
-      //oModel.loadData("../model/Employees.json");
-       /* var oTable = this.getView().byId("empTab");
-       var oTemplate = new sap.m.ColumnListItem({
-        cells:
-        [
-          new sap.m.Text({ text: "{employee>Emp-id}"}),
-          new sap.m.Text({ text: "{employee>FirstName}"}),
-          new sap.m.Text({ text: "{employee>LastName}"}),
-          new sap.m.Text({ text: "{employee>Email}"}),
-          new sap.m.Button({ text: "Edit",icon:"sap-icon://edit",press:".onOpenDialog",id:"helloDialogButton"}),
-        ]
-       });
-        
-       oTable.bindItems({
-        path: "employee>/Employees",
-        template: oTemplate
-       }); */
-
    },
    onOpenDialog : function (oEvent) {
       var oView = this.getView();
